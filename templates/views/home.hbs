@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <nav class="header-navigation">
+            <h1>{{title}}</h1>
+            <h1 class="header-navigation-links">{{>links}}</h1>
+        </nav>
+
+        <div class="project-display">
+            <div class="project-container project-container-one transition">
+                <button class="display-button display-left-button" ><</button>
+                {{>projectManagementProjectPartial}}
+                <button class="display-button display-right-button" >></button>    
+            </div>
+            <div class="project-container project-container-two translate-left transition">
+                <button class="display-button display-left-button" ><</button>
+                {{>stockTraderPartial}}
+                <button class="display-button display-right-button" >></button>  
+            </div>   
+            <div class="project-container project-container-three translate-right transition">
+                <button class="display-button display-left-button" ><</button>
+                {{>marketingAnalyticsPartial}}
+                <button class="display-button display-right-button" >></button>  
+            </div>      
+        </div>
+        <script src="/js/client.js"></script>
+    </body>
+</html>
